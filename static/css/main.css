@@ -97,12 +97,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#gallery {
+#content {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25%;
     width: 800px;
+}
+
+#content > * {
+    width: 100%;
+}
+
+#gallery {
+    margin-top: 25%;
 }
 
 .wijmo-wijtree-node a {
