@@ -1,2 +1,2 @@
-
+$("#menu").wijmenu();
 $('#tree').wijtree();
