@@ -105,9 +105,13 @@ textarea {
     width: 800px;
 }
 
+.wijmo-wijtree-node a {
+    cursor: default;
+}
 
-
-
+.wijmo-wijtree-parent .wijmo-wijtree-inner span.ui-icon {
+    cursor: pointer !important;
+}
 
 
 
