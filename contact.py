@@ -14,10 +14,10 @@ def contact_form(request):
             )
             mail_admins('Contact form', message, fail_silently=False)
             if request.is_ajax():
-                return render(request, 'contact/success.html')
+                return render(request, 'contact/templates/contact/success.html')
             else:
                 return redirect('contact_success')
     else:
         form = ContactForm()
 
-    return render(request, 'contact/form.html', {'form':form})
+    return render(request, 'contact/templates/contact/form.html', {'form':form})

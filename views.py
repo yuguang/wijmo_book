@@ -1,5 +1,11 @@
+import os
+import glob
+import string
+
 from django.shortcuts import render
-import settings, os, glob, string
+
+import settings
+
 
 def underscore_to_camelcase(s):
     return string.capwords(s, '_').replace('_', ' ')
