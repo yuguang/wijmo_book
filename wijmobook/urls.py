@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     view(r'^$', 'index.html', 'home'),
     view(r'^preface/', 'preface.html', 'preface'),
     view(r'^reviews/', 'reviews.html', 'reviews'),
-    url(r'^screenshots/', 'views.gallery', name='gallery'),
+    url(r'^screenshots/', 'wijmobook.views.gallery', name='gallery'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
@@ -20,7 +20,7 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
 )
 
-urlpatterns += patterns('contact',
+urlpatterns += patterns('wijmobook.contact',
     url(r'^contact/$', 'contact_form', name="contact_form"),
     view(r'^contact/success/$', 'contact/success.html', "contact_success"),
 )
