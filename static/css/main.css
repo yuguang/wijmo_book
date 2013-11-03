@@ -139,7 +139,9 @@ h1#banner {
     font-size: 32px;
 }
 
-
+#gallery img.thumb {
+    height:100px; width: auto;
+}
 
 
 
