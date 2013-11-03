@@ -126,8 +126,11 @@ textarea {
     margin-left: 12px;
 }
 
-h1#banner {
+h1, h2, h3 {
     font-family: Helvetica, Univers, Futura, "Avant Garde", "Akzidenz Grotesk", "Franklin Gothic", Gotham, sans-serif;
+}
+
+h1#banner {
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
