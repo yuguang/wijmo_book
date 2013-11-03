@@ -3,15 +3,41 @@
 
 {% block content %}
 
-  <h2>Provide feedback</h2>
+    <h2>Provide feedback</h2>
 
-  <p>If you have found errata in the book or just want to send book author a message, fill the following form. For errata don't forget to specify pages. Thank you.</p>
-  <form action="{% url 'contact_form' %}" method="post" id="contactform">
-    <div id="ajaxwrapper">
-    {% csrf_token %}
-    {{ form.non_field_errors }}
-    {{ form.as_p }}
-    <p id="sendwrapper"><input type="submit" value="Send" id="sendbutton"/></p>
-    </div>
-  </form>
+    <p>If you have found errata in the book or just want to send book author a message, fill the following form. For
+        errata don't forget to specify pages. Thank you.</p>
+    <ul id="contact" class="formdecorator">
+        <li>
+            <h3>
+                Subject
+            </h3>
+            <input id="subject" type="text" data-bind="value: subject"/>
+        </li>
+        <li>
+            <h3>
+                Message Type</h3>
+            <input data-bind="wijcombobox: { text: messageType, data: messageTypes }"/>
+        </li>
+        <li>
+            <h3>
+                Body
+            </h3>
+            <textarea id="body" rows="2" cols="50" data-bind="value: body"></textarea>
+        </li>
+        <li>
+            <button id="Button1" data-bind="click: submit">
+                Submit
+            </button>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block scripts %}
+
+<!--Knockout JS Library-->
+<script src="http://cdn.wijmo.com/wijmo/external/knockout-2.2.0.js" type="text/javascript"></script>
+
+<!--Wijmo Knockout Integration Library-->
+<script src="http://cdn.wijmo.com/interop/knockout.wijmo.3.20132.15.js" type="text/javascript"></script>
 {% endblock %}

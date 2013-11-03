@@ -146,12 +146,15 @@ h1#banner {
     height:100px; width: auto;
 }
 
-#contactform label {
-    display: block;
-    width: 150px;
-    float: left;
-    margin: 2px 4px 6px 4px;
-    text-align: right;
+ .formdecorator {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.formdecorator li {
+    clear: both;
+    margin-bottom: 1em;
 }
 
 /* ==========================================================================
