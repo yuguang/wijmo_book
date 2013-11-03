@@ -2,14 +2,14 @@
 {% block title %}Gallery{% endblock %}
 
 {% block content %}
-<div id="gallery">
-    <ul>
-        <li><a href="./img/6067OT_1_02.png">
-            <img src="./img/6067OT_1_02.png"/>
-        </a></li>
-        <li><a href="./img/6067OT_1_05.png">
-            <img src="./img/6067OT_1_05.png"/>
-        </a></li>
-    </ul>
-</div>
+    {% load static from staticfiles %}
+    <div id="gallery">
+        <ul>
+            {% for image in images %}
+            <li><a href="{% static image %}">
+                <img src="{% static image %}"/>
+            </a></li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}
