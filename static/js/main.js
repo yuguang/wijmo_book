@@ -1,5 +1,6 @@
-$("#menu").wijmenu();
+$('#menu').wijmenu();
 $('#tree').wijtree();
-$("#gallery").wijgallery({
+$('#gallery').wijgallery({
     thumbsDisplay: 3
 });
+$('body').removeClass('invisible')
