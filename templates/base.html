@@ -33,11 +33,11 @@
 <ul id="menu">
     <li><a>About</a>
         <ul>
-           <li><a>Preface</a></li>
+           <li><a href="{% url 'preface' %}">Preface</a></li>
             <li><a href="{% url 'gallery' %}">Gallery</a></li>
         </ul>
     </li>
-    <li><a>Contents</a></li>
+    <li><a href="{% url 'home' %}">Contents</a></li>
     <li><a>Buy the book</a>
         <ul>
            <li><a href="http://www.amazon.com/dp/1849696063/?tag=packtpubli-20">Amazon</a></li>
@@ -45,7 +45,7 @@
             <li><a href="http://www.packtpub.com/building-user-interfaces-with-wijmo/book">Packt</a></li>
         </ul>
     </li>
-    <li><a>Reviews</a></li>
+    <li><a href="{% url 'reviews' %}">Reviews</a></li>
     <li><a>Downloads</a>
         <ul>
             <li>

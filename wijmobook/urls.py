@@ -4,9 +4,13 @@ from django.views.generic import TemplateView
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
+def view(pattern, template, name):
+    return url(pattern, TemplateView.as_view(template_name=template), name=name)
 
 urlpatterns = patterns('',
-    url(r'^$', TemplateView.as_view(template_name='index.html'), 'home'),
+    view(r'^$', 'index.html', 'home'),
+    view(r'^preface/', 'preface.html', 'preface'),
+    view(r'^reviews/', 'reviews.html', 'reviews'),
     url(r'^screenshots/', 'wijmobook.views.gallery', name='gallery'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
