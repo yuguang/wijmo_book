@@ -7,7 +7,6 @@
 
     <p>If you have found errata in the book or just want to send book author a message, fill the following form. For
         errata don't forget to specify pages. Thank you.</p>
-    {% csrf_token %}
     <form action="{% url 'contact_form' %}" method="post" id="contact">
     {% csrf_token %}
     <ul class="formdecorator">

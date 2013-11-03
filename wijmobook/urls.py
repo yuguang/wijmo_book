@@ -22,5 +22,5 @@ urlpatterns = patterns('',
 
 urlpatterns += patterns('wijmobook.contact',
     url(r'^contact/$', 'contact_form', name="contact_form"),
-    view(r'^contact/success/$', 'index.html', "contact_success"),
+    view(r'^contact/success/$', 'contact/success.html', "contact_success"),
 )

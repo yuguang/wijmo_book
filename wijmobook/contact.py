@@ -6,7 +6,7 @@ def contact_form(request):
     if request.POST:
         form = ContactForm(request.POST)
         if form.is_valid():
-            message = "From: %s <%s>\r\nSubject:%s\r\nMessage:\r\n%s\r\n" % (
+            message = "From: %s <%s>\r\nSubject:Wijmo Book - %s\r\nMessage:\r\n%s\r\n" % (
                 form.cleaned_data['name'],
                 form.cleaned_data['email'],
                 form.cleaned_data['subject'],
