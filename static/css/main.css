@@ -146,7 +146,13 @@ h1#banner {
     height:100px; width: auto;
 }
 
-
+#contactform label {
+    display: block;
+    width: 150px;
+    float: left;
+    margin: 2px 4px 6px 4px;
+    text-align: right;
+}
 
 /* ==========================================================================
    Helper classes

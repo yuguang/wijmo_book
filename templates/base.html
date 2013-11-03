@@ -40,9 +40,9 @@
     <li><a href="{% url 'home' %}">Contents</a></li>
     <li><a>Buy the book</a>
         <ul>
-           <li><a href="http://www.amazon.com/dp/1849696063/?tag=packtpubli-20">Amazon</a></li>
-            <li><a href="http://my.safaribooksonline.com/9781849696067?cid=packt-cat-readnow-9781849696067">Safari Books Online</a></li>
-            <li><a href="http://www.packtpub.com/building-user-interfaces-with-wijmo/book">Packt</a></li>
+           <li><a target="_blank" href="http://www.amazon.com/dp/1849696063/?tag=packtpubli-20">Amazon</a></li>
+            <li><a target="_blank" href="http://my.safaribooksonline.com/9781849696067?cid=packt-cat-readnow-9781849696067">Safari Books Online</a></li>
+            <li><a target="_blank" href="http://www.packtpub.com/building-user-interfaces-with-wijmo/book">Packt</a></li>
         </ul>
     </li>
     <li><a href="{% url 'reviews' %}">Reviews</a></li>
@@ -62,7 +62,7 @@
 
         </ul>
     </li>
-    <li><a href="">Feedback</a></li>
+    <li><a href="{% url 'contact_form' %}">Feedback</a></li>
     <li><a id="widget-explorer" href="#">Widget Explorer</a></li>
 </ul>
 <h1 id="banner">Building UIs with Wijmo</h1>
