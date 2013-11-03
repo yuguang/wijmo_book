@@ -1,13 +1,16 @@
 {% extends "base.html" %}
 {% block title %}Gallery{% endblock %}
+{% block description %}
+Images from the book Building UIs with Wijmo, including screenshots of examples.
+{% endblock %}
 
 {% block content %}
     {% load static from staticfiles %}
     <div id="gallery">
         <ul>
             {% for image in images %}
-            <li><a href="{% static image %}">
-                <img class="thumb" src="{% static image %}"/>
+            <li><a href="{% static image.path %}">
+                <img alt="{{ image.title }}" title="{{ image.title }}" class="thumb" src="{% static image.path %}"/>
             </a></li>
             {% endfor %}
         </ul>
