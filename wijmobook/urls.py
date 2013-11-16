@@ -11,6 +11,7 @@ urlpatterns = patterns('',
     view(r'^$', 'index.html', 'home'),
     view(r'^preface/', 'preface.html', 'preface'),
     view(r'^reviews/', 'reviews.html', 'reviews'),
+    view(r'^biography/', 'biography.html', 'biography'),
     url(r'^screenshots/', 'wijmobook.views.gallery', name='gallery'),
 
     # Uncomment the admin/doc line below to enable admin documentation:

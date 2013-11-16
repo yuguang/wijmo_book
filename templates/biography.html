@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Author Biography{% endblock %}
+{% load static from staticfiles %}
+{% block content %}
+    <h3>Author Biography</h3>
+    <p class="bio">
+    <img src="{% static 'img/author.jpg' %}">
+    Yuguang Zhang has worked as a web developer in a number of small companies and holds an undergraduate degree in Computer Science from the University of Waterloo. Notable companies where he has worked at include
+        <a href="http://www.socialabra.com/">SociaLabra</a>, a social media company, and <a href="http://www.smartpager.net/">SmartPager</a>, a startup in mobile paging. He has expertise in developing interactive client-side applications with Knockout. As a personal project, he built the first IDE that runs Python in the browser, <a href="http://pythonfiddle.com">Python Fiddle</a>, using Knockout and jQuery UI. In addition, he designed and programmed <a href="http://fiddlesalad.com">Fiddle Salad</a>, a multi-language playground for rapid frontend development built with CoffeeScript and Django.
+    </p>
+{% endblock %}
