@@ -113,7 +113,7 @@ html,body {
 }
 
 #content > article {
-    padding-bottom:40px;
+    padding-bottom:50px;
 }
 
 #content > article > div.wijmo-wijtree {
@@ -229,7 +229,7 @@ footer {
    position:absolute;
    bottom:0;
    width:800px;
-   height:40px;   /* Height of the footer */
+   height:50px;   /* Height of the footer */
 }
 
 footer > p {
@@ -240,7 +240,7 @@ footer > p {
 }
 
 .hidden ~ p {
-    margin-top: 20em;
+    padding-top: 26px
 }
 /* ==========================================================================
    Helper classes
