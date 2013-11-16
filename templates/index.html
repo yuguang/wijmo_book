@@ -4,7 +4,20 @@
     Wijmo is composed of over 40 user interface widgets ranging from form components to enterprise charts. All of the widgets come with themes. Not everything is perfect. Wijmo comes with its rough edges. In this book, I point out the pitfalls and guide you around them. The benefit of learning from this book is that you won't make the mistakes I've made. Learning Wijmo makes web development simpler, quicker, and more enjoyable.
 {% endblock %}
 
+{% load static from staticfiles %}
 {% block content %}
+    <div itemscope itemtype="http://schema.org/Book" id="book-info">
+
+    <img itemprop="image" src="{% static 'img/cover.jpg' %}" alt="Building UIs with Wijmo book cover"/>
+    <ul>
+				<li><strong>Language</strong>: <span itemprop="inLanguage">English</span></li>
+				<li><strong><link itemprop="bookFormat" href="http://schema.org/Paperback">Paperback</strong>: <span itemprop="numberOfPages">116</span> pages [ 235mm × 191mm ]</li>
+				<li><strong>Release Date</strong>: <meta itemprop="datePublished" content="2013-09-26">September 2013</li>
+				<li><strong>ISBN</strong>: <span itemprop="isbn">1849696063</span></li>
+				<li><strong>ISBN 13</strong>: <span itemprop="isbn">9781849696067</span></li>
+				<li><strong>Publisher</strong>: <a itemprop="publisher" target="_blank" href="http://www.packtpub.com/building-user-interfaces-with-wijmo/book">PACKT Publishing</a></li>
+			</ul>
+    </div>
 <ul id="tree">
 <li>
     <a>

@@ -191,6 +191,28 @@ img.align-right {
     float: right;
     margin: 0 0 1em 1em;
 }
+
+img.align-left {
+    float: left;
+    margin: 0 1em 1em 0
+}
+
+img.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#book-info {
+    width: 80%;
+    margin-left: 2em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-count: 2; /* Safari and Chrome */
+    column-count: 2;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
