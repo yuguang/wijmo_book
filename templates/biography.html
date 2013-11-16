@@ -3,9 +3,10 @@
 {% load static from staticfiles %}
 {% block content %}
     <h3>Author Biography</h3>
-    <p class="bio">
-    <img src="{% static 'img/author.jpg' %}">
+    <p>
+    <img class="align-right" src="{% static 'img/author.jpg' %}">
     Yuguang Zhang has worked as a web developer in a number of small companies and holds an undergraduate degree in Computer Science from the University of Waterloo. Notable companies where he has worked at include
         <a href="http://www.socialabra.com/">SociaLabra</a>, a social media company, and <a href="http://www.smartpager.net/">SmartPager</a>, a startup in mobile paging. He has expertise in developing interactive client-side applications with Knockout. As a personal project, he built the first IDE that runs Python in the browser, <a href="http://pythonfiddle.com">Python Fiddle</a>, using Knockout and jQuery UI. In addition, he designed and programmed <a href="http://fiddlesalad.com">Fiddle Salad</a>, a multi-language playground for rapid frontend development built with CoffeeScript and Django.
     </p>
+    <p>He is currently working as a research engineer at the University of Waterloo on a project called <a href="https://datamill.uwaterloo.ca/about/">DataMill</a>. It is a community-based easy to use service oriented benchmarking infrastructure for performance evaluation. As the main system administrator and developer of the team he installs Gentoo Linux on computers, develops distributed software to run on master and worker nodes, and programs interactive user interfaces. Wijmo's slider integration with Knockout has helped tremendously in developing the experiment submission form, where range sliders are used to select lower and upper bounds for factors such as page size, clock speed, and core count. As the web developer on the team, he programs in Python and CoffeeScript using the Django framework. </p>
 {% endblock %}

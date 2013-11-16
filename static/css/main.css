@@ -187,9 +187,9 @@ blockquote p {
     text-align: right;
 }
 
-.bio img {
+img.align-right {
     float: right;
-    margin: 0 0 1em 1em
+    margin: 0 0 1em 1em;
 }
 /* ==========================================================================
    Helper classes
