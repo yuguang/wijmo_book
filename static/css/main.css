@@ -213,6 +213,18 @@ div#book-info {
     column-count: 2;
 }
 
+footer {
+    margin-top: 250px;
+    height: 42px;
+    margin-bottom: 0;
+}
+
+footer > p {
+    padding: 0;
+    margin: 0;
+    font-size: 70%;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
