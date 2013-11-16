@@ -11,3 +11,6 @@ if ($('#contact').length) {
     $('textarea,input').wijtextbox();
     $('button').button();
 }
+setTimeout(function(){
+    $('.hidden').removeClass('hidden');
+}, 2000)
