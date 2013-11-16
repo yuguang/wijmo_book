@@ -30,46 +30,58 @@
 <![endif]-->
 
 <div id="content">
-<ul id="menu">
-    <li><a>About</a>
-        <ul>
-           <li><a href="{% url 'preface' %}">Preface</a></li>
-            <li><a href="{% url 'gallery' %}">Gallery</a></li>
-            <li><a href="http://www.packtpub.com/building-user-interfaces-with-wijmo/book#learn" target="_blank">Back Cover</a></li>
-            <li><a href="{% url 'biography' %}">The Author</a></li>
-        </ul>
-    </li>
-    <li><a href="{% url 'home' %}">Contents</a></li>
-    <li><a>Buy the book</a>
-        <ul>
-           <li><a target="_blank" href="http://www.amazon.com/dp/1849696063/?tag=packtpubli-20">Amazon</a></li>
-            <li><a target="_blank" href="http://my.safaribooksonline.com/9781849696067?cid=packt-cat-readnow-9781849696067">Safari Books Online</a></li>
-            <li><a target="_blank" href="http://www.packtpub.com/building-user-interfaces-with-wijmo/book">Packt</a></li>
-        </ul>
-    </li>
-    <li><a href="{% url 'reviews' %}">Reviews</a></li>
-    <li><a>Downloads</a>
-        <ul>
-            <li>
-                <a href="http://www.packtpub.com/sites/default/files/9781849696067_Chapter_02.pdf?utm_source=packtpub&utm_medium=free&utm_campaign=pdf">Free
-                    Chapter 2 in PDF</a></li>
-            <li><a href="">Code</a>
+    <nav>
+        <ul id="menu">
+            <li><a>About</a>
                 <ul>
-                    <li><a href="http://www.packtpub.com/code_download/13427">Original from Packt website</a></li>
-                    <li><a href="https://github.com/yuguang/wijmo_essentials/archive/master.zip">Updated zip from
-                        github</a></li>
-                    <li><a href="https://github.com/yuguang/wijmo_book/archive/master.zip">Source for this site</a></li>
+                    <li><a href="{% url 'preface' %}">Preface</a></li>
+                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                    <li><a href="http://www.packtpub.com/building-user-interfaces-with-wijmo/book#learn"
+                           target="_blank">Back Cover</a></li>
+                    <li><a href="{% url 'biography' %}">The Author</a></li>
                 </ul>
             </li>
+            <li><a href="{% url 'home' %}">Contents</a></li>
+            <li><a>Buy the book</a>
+                <ul>
+                    <li><a target="_blank" href="http://www.amazon.com/dp/1849696063/?tag=packtpubli-20">Amazon</a></li>
+                    <li><a target="_blank"
+                           href="http://my.safaribooksonline.com/9781849696067?cid=packt-cat-readnow-9781849696067">Safari
+                        Books Online</a></li>
+                    <li><a target="_blank"
+                           href="http://www.packtpub.com/building-user-interfaces-with-wijmo/book">Packt</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url 'reviews' %}">Reviews</a></li>
+            <li><a>Downloads</a>
+                <ul>
+                    <li>
+                        <a href="http://www.packtpub.com/sites/default/files/9781849696067_Chapter_02.pdf?utm_source=packtpub&utm_medium=free&utm_campaign=pdf">Free
+                            Chapter 2 in PDF</a></li>
+                    <li><a href="">Code</a>
+                        <ul>
+                            <li><a href="http://www.packtpub.com/code_download/13427">Original from Packt website</a>
+                            </li>
+                            <li><a href="https://github.com/yuguang/wijmo_essentials/archive/master.zip">Updated zip
+                                from
+                                github</a></li>
+                            <li><a href="https://github.com/yuguang/wijmo_book/archive/master.zip">Source for this
+                                site</a></li>
+                        </ul>
+                    </li>
 
+                </ul>
+            </li>
+            <li><a href="{% url 'contact_form' %}">Feedback</a></li>
+            <li><a id="widget-explorer" href="#">Widget Explorer</a></li>
         </ul>
-    </li>
-    <li><a href="{% url 'contact_form' %}">Feedback</a></li>
-    <li><a id="widget-explorer" href="#">Widget Explorer</a></li>
-</ul>
-<h1 id="banner">Building UIs with Wijmo</h1>
-{% block content %}
-{% endblock %}
+    </nav>
+    <h1 id="banner">Building UIs with Wijmo</h1>
+    <article>
+        {% block content %}
+        {% endblock %}
+    </article>
+    <footer></footer>
 </div>
 <div id="dialog" title="Wijmo">
 </div>
