@@ -104,7 +104,7 @@ textarea {
     width: 800px;
 }
 
-#content > article > * {
+#content > article > div.wijmo-wijtree {
     width: 100%;
 }
 
@@ -181,23 +181,23 @@ blockquote:before {
   vertical-align: -0.4em;
 }
 blockquote p {
-  display: inline;
+  display: block;
 }
 .reviewer {
     text-align: right;
 }
 
-img.align-right {
+.align-right {
     float: right;
     margin: 0 0 1em 1em;
 }
 
-img.align-left {
+.align-left {
     float: left;
     margin: 0 1em 1em 0
 }
 
-img.align-center {
+.align-center {
     display: block;
     margin-left: auto;
     margin-right: auto
@@ -215,7 +215,7 @@ div#book-info {
 
 footer {
     margin-top: 250px;
-    height: 42px;
+    height: 22px;
     margin-bottom: 0;
 }
 
@@ -223,6 +223,7 @@ footer > p {
     padding: 0;
     margin: 0;
     font-size: 70%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* ==========================================================================
