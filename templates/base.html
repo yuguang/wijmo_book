@@ -84,7 +84,6 @@
     <footer>
         <div class="hidden">
             <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
-            <div class="fb-like" data-href="http://wijmobook.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
         </div>
         <p class="align-left">&copy {% now "Y" %} by Yuguang Zhang.</p>
         <p class="align-right">Built with <a href="http://wijmo.com/" target="_blank">Wijmo</a> and <a href="https://www.djangoproject.com/" target="_blank">Django</a>.</p>
@@ -99,7 +98,6 @@
 <script src="{% static "js/jquery.wijmo-pro.all.3.20132.15.min.js"%}"></script>
 <script src="{% static "js/main.js"%}?v=2"></script>
 
-<div id="fb-root"></div>
 <script>
     (function (b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;
@@ -124,13 +122,6 @@
         po.src = 'https://apis.google.com/js/plusone.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
     })();
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=158441127534046";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
 </body>
